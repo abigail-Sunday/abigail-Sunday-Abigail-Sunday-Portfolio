@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+  /* Animation for fade-in sections */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  </style>
+
+  <link rel="stylesheet" href="index.css">
+  <title>Coursera project</title>
+</head>
+
+<body>
+  <header>
+    <img class="hero" src="images/freepik__assistant__46399.png">
+    <div class="border-radius">
+      <h1 class="mynamep">SUNDAY ABIGAIL OFFOR</h1>
+      <h3 class="soft">Software Developer</h3>
+      <p class="para">
+        I am a software developer from Nigeria, currently living in Lagos Mainland.
+        After completing the AYP/CIHP program with a degree in Information Technology,
+        I have been working on exciting projects designed to connect people and ideas.
+        This portfolio showcases some of my work, and I hope you enjoy exploring it!
+      </p>
+    </div>
+    <h1 class="dottedline">••••••••••••••••••••••</h1>
+    <section>
+      <h1>Portfolio</h1>
+      <!-- Portfolio Section -->
+      <section class="portfolio-section">
+        <div class="portfolio-grid">
+
+          <!-- Item 1 -->
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img class="portfolio-image" src="images/download.png" alt="Capstone project">
+            </div>
+            <h3 class="portfolio-title"> Capstone University Website</h3>
+            <p class="portfolio-text">
+            <p>An interactive university web site built for my capstone project to showcase modern design and
+              functionality.</p>
+            </p>
+            <a href="https://abigail-sunday.github.io/CAP-STONE-PROJECT/" class="portfolio-btn">Try It Out</a>
+          </div>
+<script>
+// === Smooth Scrolling for Internal Links ===
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 50,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// === Skill Hover Animation ===
+document.querySelectorAll('.skills span').forEach(skill => {
+  skill.style.transition = "all 0.3s ease";
+  skill.addEventListener('mouseenter', () => {
+    skill.style.background = '#e5aa59';
+    skill.style.color = 'white';
+    skill.style.transform = 'scale(1.1)';
+    skill.style.boxShadow = '0 0 10px #e5aa59';
+  });
+  skill.addEventListener('mouseleave', () => {
+    skill.style.background = 'transparent';
+    skill.style.color = 'black';
+    skill.style.transform = 'scale(1)';
+    skill.style.boxShadow = 'none';
+  });
+});
+
+// === Portfolio Hover Animation ===
+document.querySelectorAll('.portfolio-item').forEach(item => {
+  item.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+  item.addEventListener('mouseenter', () => {
+    item.style.transform = 'scale(1.05)';
+    item.style.boxShadow = '0 10px 25px rgba(0,0,0,0.25)';
+  });
+  item.addEventListener('mouseleave', () => {
+    item.style.transform = 'scale(1)';
+    item.style.boxShadow = '0 6px 16px rgba(0,0,0,0.1)';
+  });
+});
+
+// === Create "Up" and "Down" Buttons ===
+const upBtn = document.createElement('button');
+const downBtn = document.createElement('button');
+
+// Button styles
+[upBtn, downBtn].forEach(btn => {
+  btn.style.position = "fixed";
+  btn.style.right = "20px";
+  btn.style.padding = "10px 16px";
+  btn.style.border = "none";
+  btn.style.borderRadius = "10px";
+  btn.style.cursor = "pointer";
+  btn.style.background = "#e5aa59";
+  btn.style.color = "#1e1e1e";
+  btn.style.fontWeight = "bold";
+  btn.style.boxShadow = "0 4px 12px rgba(0,0,0,0.3)";
+  btn.style.transition = "transform 0.2s ease";
+  btn.addEventListener('mouseenter', () => btn.style.transform = "scale(1.1)");
+  btn.addEventListener('mouseleave', () => btn.style.transform = "scale(1)");
+});
+
+upBtn.textContent = "⬆️ Up";
+downBtn.textContent = "⬇️ Down";
+upBtn.style.bottom = "80px";
+downBtn.style.bottom = "20px";
+
+document.body.appendChild(upBtn);
+document.body.appendChild(downBtn);
+
+// Show/Hide Up Button when scrolling
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) {
+    upBtn.style.display = "block";
+  } else {
+    upBtn.style.display = "none";
+  }
+});
+
+// Scroll to top
+upBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Scroll to bottom
+downBtn.addEventListener('click', () => {
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+});
+</script>
+
+          <!-- Item 2 -->
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img class="portfolio-image" src="images/freepik_assistant_1759748566505.png"
+                alt="Illustrator vector art">
+            </div>
+            <h3 class="portfolio-title">Illustrator Vector Art</h3>
+            <p class="portfolio-text">Traced from Paper and Colored</p>
+            <a href="#" class="portfolio-btn">Take a Closer Look</a>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img class="portfolio-image" src="images/image.png" alt="Third project">
+            </div>
+            <h3 class="portfolio-title">GitHub</h3>
+            <p class="portfolio-text">Take a look at my other projects on GitHub</p>
+            <a href="https://github.com/abigail-Sunday" class="portfolio-btn">Explore</a>
+          </div>
+
+        </div>
+
+
+      </section>
+      <h1 class="dottedline">••••••••••••••••••••••</h1>
+      <h3 class="soft">Skill Summary</h3>
+      <section class="americana">
+
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+
+        </div>
+      </section>
+      <section class="ogu">
+        <ul>
+          <li>Fontend web developer</li>
+          <li>PowerPoint presentation design</li>
+          <li>Microsoft Word (documentation)</li>
+        </ul>
+      </section>
+      <h1 class="dottedline">••••••••••••••••••••••</h1>
+
+      <h1 class="soft">Career Highlights</h1>
+      <section class="ogu">
+        <ul>
+          <li>I am and learning at an AYP center.</li>
+          <li>I am gaining skills in coding and web design.
+          </li>
+          <li>I use Microsoft Office tools in my daily tasks.</li>
+
+      </section>
+      <h1 class="dottedline">••••••••••••••••••••••</h1>
+      <section>
+        <h1 class="soft">Education</h1>
+        <p class="para"> SSCE & NECO Certificate — Natan Model Secondary School, Cross River State
+          2018 – 2024
+          First School Leaving Certificate (FSLC) — Cash Them Young Nursing and Primary School, Cross River State
+          2012 – 2018
+
+        </p>
+      </section>
+       <h1 class="dottedline">••••••••••••••••••••••</h1>
+       <section>
+                <h1 class="soft">Contact</h1>
+                <p class="para">Email: sundayabigailoffor@gmail.com</p>
+<p class="para">Phone: +234 704 585 55949</p>
+       </section>
+       <script>
+// Smooth scroll for all internal links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// Fade-in on scroll for all sections
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('section, header, footer').forEach(el => {
+  el.classList.add('hidden');
+  observer.observe(el);
+});
+
+// Hover animation for portfolio cards
+document.querySelectorAll('.portfolio-item').forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    item.style.transform = 'translateY(-8px)';
+    item.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+    item.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.25)';
+  });
+  item.addEventListener('mouseleave', () => {
+    item.style.transform = 'translateY(0)';
+    item.style.boxShadow = '0 6px 16px rgba(0, 0, 0, 0.1)';
+  });
+});
+</script>
+
+       <footer class="october">
+         Copyright 2025 Abigil o. Sunday
+       </footer>
+       
+</body>
+
+</html>
